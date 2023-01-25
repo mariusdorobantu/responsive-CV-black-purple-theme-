@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Ma+Shan+Zheng&family=Moon+Dance&family=Oswald:wght@200&family=Roboto+Condensed:wght@300&family=Rubik+Distressed&family=Sofia+Sans:wght@100&family=Yeon+Sung&display=swap');
+* {
+    color: white;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;  
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background:  rgb(19, 5, 71);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.intregul-cv {
+    background: #000000;
+    max-width: 30%;
+    min-width: 30%;
+    min-height: 800px;
+    display: flex;
+    padding: 20px;
+    column-gap: 5%;
+    box-shadow: 0 -20px 70px;
+}
+
+.partea-stanga {
+    width: 45%;
+    max-width: 100%;
+    /* border: 1px solid white; */
+    height: 670px;
+    align-self: flex-end;
+    padding: 15px;
+    background:rgb(20, 18, 18);
+    border-radius: 20px;
+}
+
+/*  continutul din partea stanga */
+
+h2 {
+    letter-spacing: 0.2em;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+h3 span {
+    padding: 5px 15px;
+    background: rgb(55, 26, 160);
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+}
+
+h5 {
+    letter-spacing: 0.2em;
+    font-size: 15px;
+    padding: 
+}
+
+h4 {
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px;
+}
+
+p {
+    font-size: 12px;
+}
+.catevacuvinte {
+    padding: 20px 0px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+}
+
+.adresa {
+    color: rgb(55, 26, 160);
+    text-transform: uppercase;
+    font-family: arial;
+    font-weight: bold;
+}
+
+/* continutul din partea dreapta */
+
+.partea-dreapta {
+    width: 55%;
+    max-width: 100%;
+    /* border: 1px solid white; */
+    height: 800px;
+    align-self: flex-end;
+}
+
+img {
+    width: 100%;
+    height: auto; 
+}
+
+.timeline-bar {
+    border-left: 2px solid rgb(55, 26, 160);
+}
+
+.educatie {
+    line-height: 1.5;
+    position: relative;
+    padding-left: 10px;
+}
+
+.educatie:before {
+    content: '';
+    display:block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgb(254, 254, 255);
+    border: 3px solid rgb(55, 26, 160);
+    position: absolute;
+    top: 14px;
+    left: -6px;
+}
+
+.despre-curs {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+} 
+.cursul {
+    padding-top: 10px;
+    color: rgb(78, 51, 172);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    word-spacing: 0.1em;
+}
+
+.padding-education {
+    padding: 20px 0px;
+}
+
+.padding-work {
+    padding: 20px 0px;
+}
+
+.perioada 
+{ 
+    font-weight: bold;
+    font-size: 10px;
+    word-spacing: 0.1em;
+}
+
+/* Progress-bar */
+
+.progress {
+    width: 50px;
+    height: 10px;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden; /* si parte din stanga este rotunjita */
+}
+    
+.progress-bar {
+    display: flex;
+    justify-content: space-around;
+}    
+
+
+/* aici daca schimbi % latimii, se modifica culoarea mov */
+.progress__fill1 {
+    width: 80%;
+    height: 100%;
+    background: rgb(55, 26, 160);
+}
+.progress__fill2 {
+    width: 50%;
+    height: 100%;
+    background: rgb(55, 26, 160);
+}
+.progress__fill3 {
+    width: 20%;
+    height: 100%;
+    background: rgb(55, 26, 160);
+}
+
+.icoane {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    font-size: 40px;
+}
+
+/* Responsive */
+
+@media(max-width: 1870px) {
+    .intregul-cv {
+        max-width: 560px;
+}
+}
+
+@media(max-width: 560px) {
+    .intregul-cv {
+        max-width: 100%;
+}
+}
+
+@media(max-width: 545px) {
+        h4 {
+            padding: 0px;
+        }
+}
+
+@media(max-width: 455px) {
+    h4 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    h3 span {
+        font-size: 11px;
+    }
+}
+
+@media(max-width: 444px) {
+    h4 {
+        font-size: 19px;
+    }
+    h3 span {
+        font-size: 11px;
+    }
+}
+
+@media(max-width: 423px) {
+    h4 {
+        font-size: 18px;
+    }
+    h3 span {
+        font-size: 10px;
+    }
+    h2 {
+        font-size: 21px;
+    }
+}
+
+@media(max-width: 406px) {
+    .catevacuvinte {
+        padding: 14px 0px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 403px) {
+    .partea-stanga {
+        padding: 10px;
+    }
+}
+
+@media(max-width: 403px) {
+    h3 span {
+        padding: 5px 12px;
+    }
+}
+
+@media(max-width: 367px) {
+    h3 span {
+        padding: 5px 10px;
+    }
+}
+
+
+
+
+
